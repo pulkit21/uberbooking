@@ -7,20 +7,20 @@ class ApplicationController < ActionController::Base
 
   def uber_booking
     render json: {
-      "_id": "booking.json",
-      "_rev": "2-0422df72f968ecfd6a3898ab449868d3",
-      "general_configuration": {
-        "name": "Cab Booking",
-        "logo": "http://www.thetransportllc.com/wp-content/uploads/2013/05/5650631_l.jpg",
-        "content_url": "http://128.199.154.12:5984/android/uber_data_card.json",
-        "dynamic_ui_url": "http://128.199.154.12:5984/android/uber_request_card.json"
+      _id: "booking.json",
+      _rev: "2-0422df72f968ecfd6a3898ab449868d3",
+      general_configuration: {
+        name: "Cab Booking",
+        logo: "http://www.thetransportllc.com/wp-content/uploads/2013/05/5650631_l.jpg",
+        content_url: "http://128.199.154.12:5984/android/uber_data_card.json",
+        dynamic_ui_url: "http://128.199.154.12:5984/android/uber_request_card.json"
       },
-      "navigation_configuration": {
-        "categories": [
+      navigation_configuration: {
+        categories: [
           {
-            "id": "1",
-            "name": "Booking",
-            "url": "http://128.199.154.12:5984/android/uber_data_card.json"
+            id: "1",
+            name: "Booking",
+            url: "http://128.199.154.12:5984/android/uber_data_card.json"
           }
         ]
       }
