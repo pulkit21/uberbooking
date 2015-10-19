@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
           }
         ]
       }
-    }, status: 2000
+    }, status: 200
   end
 
   #######
