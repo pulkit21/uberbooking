@@ -33,7 +33,8 @@ class ApplicationController < ActionController::Base
 
   def find_appbrowzer
     if request.headers["X-User-Agent"] == "appbrowzer"
-      redirect_to '/api/appbrowzer' , status: 302
+    else
+      render json: {message: "Invalid request"}, status: 422
     end
   end
 
